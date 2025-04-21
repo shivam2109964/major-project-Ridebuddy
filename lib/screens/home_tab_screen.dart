@@ -58,7 +58,7 @@ class _HomeTabScreenState extends State<HomeTabScreen> {
       padding: const EdgeInsets.fromLTRB(20.0, 8.0, 20.0, 8.0),
       child: Row(
         children: [
-          const Icon(Icons.search, color: Colors.black),
+          const Icon(Icons.gps_fixed, color: Colors.blue),
           const SizedBox(width: 20),
           const Expanded(
             child: Text(

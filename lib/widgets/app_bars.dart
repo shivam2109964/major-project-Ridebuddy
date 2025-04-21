@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:ridebuddy/constants/constants.dart';
 import 'package:ridebuddy/widgets/styles.dart';
 

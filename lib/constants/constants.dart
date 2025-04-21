@@ -5,7 +5,7 @@ class Constants {
   static const String menuServices = "Services";
   static const String menuActivity = "Activity";
   static const String menuAccount = "Account";
-  static const String labelWhereTo = "Where to?";
+  static const String labelWhereTo = "My Location";
   static const String labelSectionSuggestions = "Suggestions";
   static const String labelSeeAll = "See all";
   static const String labelSectionCommute = "Commute smarter";
