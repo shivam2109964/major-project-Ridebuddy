@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ridebuddy/constants/constants.dart';
+import 'package:ridebuddy/location/preview.dart';
 import 'package:ridebuddy/models/banner_commute_items.dart';
 import 'package:ridebuddy/models/banner_ride_items.dart';
 import 'package:ridebuddy/models/ride_items.dart';
@@ -50,49 +51,55 @@ class _HomeTabScreenState extends State<HomeTabScreen> {
   }
 
   Widget buildSearchWidget() {
-    return Container(
-      decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 229, 226, 226),
-        borderRadius: BorderRadius.all(Radius.circular(50.0)),
-      ),
-      padding: const EdgeInsets.fromLTRB(20.0, 8.0, 20.0, 8.0),
-      child: Row(
-        children: [
-          const Icon(Icons.gps_fixed, color: Colors.blue),
-          const SizedBox(width: 20),
-          const Expanded(
-            child: Text(
-              Constants.labelWhereTo,
-              style: TextStyle(
-                color: Color.fromARGB(137, 0, 0, 0),
-                fontSize: 18,
-                fontWeight: FontWeight.w800,
+    return MaterialButton(
+      onPressed: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MapPreview()));
+      },
+      child: Container(
+        decoration: const BoxDecoration(
+          color: Color.fromARGB(255, 229, 226, 226),
+          borderRadius: BorderRadius.all(Radius.circular(50.0)),
+        ),
+        padding: const EdgeInsets.fromLTRB(20.0, 8.0, 20.0, 8.0),
+        child: Row(
+          children: [
+            const Icon(Icons.gps_fixed, color: Colors.blue),
+            const SizedBox(width: 20),
+            const Expanded(
+              child: Text(
+                Constants.labelWhereTo,
+                style: TextStyle(
+                  color: Color.fromARGB(137, 0, 0, 0),
+                  fontSize: 18,
+                  fontWeight: FontWeight.w800,
+                ),
               ),
             ),
-          ),
-          Container(width: 5, color: Colors.white),
-          Container(
-            padding: const EdgeInsets.all(8.0),
-            decoration: const BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+            Container(width: 5, color: Colors.white),
+            Container(
+              padding: const EdgeInsets.all(8.0),
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              ),
+              child: const Row(
+                children: [
+                  Icon(
+                    Icons.watch_later,
+                    color: Colors.black,
+                  ),
+                  SizedBox(width: 5),
+                  Text('Now'),
+                  Icon(
+                    Icons.arrow_drop_down_sharp,
+                    color: Colors.black,
+                  )
+                ],
+              ),
             ),
-            child: const Row(
-              children: [
-                Icon(
-                  Icons.watch_later,
-                  color: Colors.black,
-                ),
-                SizedBox(width: 5),
-                Text('Now'),
-                Icon(
-                  Icons.arrow_drop_down_sharp,
-                  color: Colors.black,
-                )
-              ],
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

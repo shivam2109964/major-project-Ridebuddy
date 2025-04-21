@@ -1,8 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
     <application
         android:label="ridebuddy"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        
+<!-- Inside <application> tag -->
+<meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyBYVm66hk-7rTbvdbOTdTtWDw042s2WneQ"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
