@@ -53,8 +53,8 @@ class _HomeTabScreenState extends State<HomeTabScreen> {
   Widget buildSearchWidget() {
     return MaterialButton(
       onPressed: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => MapPreview()));
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const MapPreview()));
       },
       child: Container(
         decoration: const BoxDecoration(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:ridebuddy/location/map_view_widget.dart';
 
 class MapPreview extends StatefulWidget {

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "536126706173",
+    "project_id": "ride-buddy-6d1c3",
+    "storage_bucket": "ride-buddy-6d1c3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536126706173:android:c76fe5a8ebdd9303e00994",
+        "android_client_info": {
+          "package_name": "com.example.ridebuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgqSCOfl75DDPZ6DyW201IISeDi3QfVqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536126706173:android:8c3ea72a67a9b05ce00994",
+        "android_client_info": {
+          "package_name": "com.ridybuddy.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgqSCOfl75DDPZ6DyW201IISeDi3QfVqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
